@@ -100,6 +100,141 @@ Você precisará pensar em:
 - conversão de volta para `number`;
 - uso de `return`.
 
+## Onde estudar
+
+### Funções, parâmetros e `return`
+
+Material didático:
+
+- MDN — Funções:  
+  https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Functions
+
+Leia principalmente sobre:
+
+- declaração de funções;
+- parâmetros;
+- valores de retorno;
+- `return`.
+
+### Tipos `number` e `string`
+
+Material didático:
+
+- MDN — Tipos e estruturas de dados:  
+  https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Data_structures
+
+Você precisa entender principalmente a diferença entre:
+
+```js
+123
+```
+
+e:
+
+```js
+"123"
+```
+
+O primeiro é um número e o segundo é um texto.
+
+### Converter número para string
+
+Material:
+
+- MDN — `String()`:  
+  https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/String
+
+Exemplo:
+
+```js
+String(123)
+```
+
+Resultado:
+
+```js
+"123"
+```
+
+### Converter string para número
+
+Material:
+
+- MDN — `Number()`:  
+  https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Number/Number
+
+Exemplo:
+
+```js
+Number("123")
+```
+
+Resultado:
+
+```js
+123
+```
+
+### Manipulação de strings
+
+Material didático:
+
+- MDN — Trabalhando com texto:  
+  https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Core/Scripting/Strings
+
+Estude principalmente:
+
+- acessar caracteres;
+- transformar uma string;
+- juntar e separar textos.
+
+### Arrays e `reverse()`
+
+Uma forma de inverter caracteres é transformar o texto em array e depois inverter esse array.
+
+Material:
+
+- MDN — `split()`:  
+  https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/split
+
+- MDN — `reverse()`:  
+  https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse
+
+- MDN — `join()`:  
+  https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/join
+
+Esses três métodos costumam aparecer juntos em problemas desse tipo:
+
+```text
+string → array → inverter → string
+```
+
+### Números negativos
+
+Material:
+
+- MDN — Operadores aritméticos:  
+  https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Expressions_and_operators#operadores_aritm%C3%A9ticos
+
+Você também pode consultar:
+
+- MDN — `Math.abs()`:  
+  https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Math/abs
+
+`Math.abs()` devolve o valor absoluto de um número.
+
+Exemplo:
+
+```js
+Math.abs(-25)
+```
+
+Resultado:
+
+```js
+25
+```
+
 ---
 
 # Questão 2 — Somar os valores pares
@@ -186,6 +321,135 @@ Você precisará lembrar de:
 - `if`;
 - `return`.
 
+## Onde estudar
+
+### Arrays
+
+Material didático:
+
+- MDN — Arrays:  
+  https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Core/Scripting/Arrays
+
+Leia principalmente sobre:
+
+- criação de arrays;
+- posições;
+- elementos;
+- `length`;
+- como percorrer os valores.
+
+Exemplo:
+
+```js
+const numeros = [2, 4, 6]
+```
+
+### Estruturas de repetição
+
+Material:
+
+- MDN — Laços e iterações:  
+  https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Loops_and_iteration
+
+Para esta questão, estude principalmente:
+
+```js
+for
+for...of
+```
+
+Exemplo:
+
+```js
+for (const numero of numeros) {
+    // código executado para cada número
+}
+```
+
+### Estrutura condicional `if`
+
+Material didático:
+
+- MDN — Condicionais:  
+  https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Core/Scripting/Conditionals
+
+Você utilizará uma condição para decidir se determinado número deve ou não entrar na soma.
+
+### Operador módulo `%`
+
+Material:
+
+- MDN — Operador resto `%`:  
+  https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/Remainder
+
+O operador `%` informa o resto de uma divisão.
+
+Exemplo:
+
+```js
+10 % 2
+```
+
+Resultado:
+
+```js
+0
+```
+
+Isso é útil para identificar números pares.
+
+Uma propriedade importante:
+
+```text
+Se um número inteiro dividido por 2 tem resto 0, ele é par.
+```
+
+### Comparações
+
+Material:
+
+- MDN — Operadores de comparação:  
+  https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Expressions_and_operators#operadores_de_compara%C3%A7%C3%A3o
+
+Observe principalmente o operador:
+
+```js
+===
+```
+
+### Variável acumuladora
+
+Uma variável acumuladora guarda um resultado e vai sendo atualizada durante uma repetição.
+
+Exemplo:
+
+```js
+let soma = 0
+
+soma = soma + 4
+soma = soma + 8
+```
+
+Também é possível escrever:
+
+```js
+soma += 4
+```
+
+Material relacionado:
+
+- MDN — Operadores de atribuição:  
+  https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Expressions_and_operators#operadores_de_atribui%C3%A7%C3%A3o
+
+### `return`
+
+Material:
+
+- MDN — Funções:  
+  https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Functions
+
+Lembre-se: `console.log()` apenas mostra um valor. O exercício pede que a função **retorne** o resultado.
+
 ---
 
 # Questão 3 — Somar os valores ímpares
@@ -271,6 +535,115 @@ Você precisará lembrar de:
 - variável acumuladora;
 - `return`.
 
+## Onde estudar
+
+### Arrays
+
+Material didático:
+
+- MDN — Arrays:  
+  https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Core/Scripting/Arrays
+
+Concentre-se em:
+
+- elementos;
+- posições;
+- tamanho do array;
+- percorrer todos os elementos.
+
+### Estruturas de repetição
+
+Material:
+
+- MDN — Laços e iterações:  
+  https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Loops_and_iteration
+
+Para este exercício, `for` ou `for...of` são suficientes.
+
+### Operador módulo `%`
+
+Material:
+
+- MDN — Operador resto `%`:  
+  https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/Remainder
+
+Para números positivos:
+
+```js
+numero % 2
+```
+
+retornará:
+
+```js
+0
+```
+
+quando o número for par.
+
+Para números ímpares, o resultado será diferente de `0`.
+
+Como o exercício também aceita números negativos, compare o resultado com `0`, em vez de assumir que o resto será sempre `1`.
+
+### Operadores de comparação
+
+Material:
+
+- MDN — Operadores de comparação:  
+  https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Expressions_and_operators#operadores_de_compara%C3%A7%C3%A3o
+
+Observe principalmente:
+
+```js
+===
+!==
+```
+
+### Estrutura condicional `if`
+
+Material:
+
+- MDN — Condicionais:  
+  https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Core/Scripting/Conditionals
+
+A condição será utilizada para decidir quais números devem ser adicionados à soma.
+
+### Variável acumuladora
+
+Para somar vários valores, você pode começar com:
+
+```js
+let soma = 0
+```
+
+e atualizar a variável enquanto percorre o array.
+
+Exemplo conceitual:
+
+```js
+soma = soma + numero
+```
+
+ou:
+
+```js
+soma += numero
+```
+
+Material:
+
+- MDN — Operadores de atribuição:  
+  https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Expressions_and_operators#operadores_de_atribui%C3%A7%C3%A3o
+
+### Funções e `return`
+
+Material:
+
+- MDN — Funções:  
+  https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Functions
+
+Sua função deve devolver a soma final utilizando `return`.
+
 ---
 
 # Conteúdos trabalhados
@@ -288,7 +661,47 @@ Estes exercícios trabalham principalmente:
 - estruturas condicionais;
 - operador módulo `%`;
 - números pares e ímpares;
+- operadores de comparação;
 - variáveis acumuladoras.
+
+---
+
+# Documentação geral recomendada
+
+## MDN — JavaScript para iniciantes
+
+https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Core/Scripting
+
+Essa parte da documentação é uma das mais indicadas para quem ainda está aprendendo JavaScript. Os conteúdos são apresentados de forma mais didática do que nas páginas de referência técnica.
+
+## Guia de JavaScript da MDN
+
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide
+
+Use o guia quando precisar revisar um assunto específico, como:
+
+- funções;
+- loops;
+- operadores;
+- tipos de dados;
+- objetos;
+- arrays.
+
+## Referência JavaScript da MDN
+
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference
+
+A referência é útil quando você já sabe o recurso que procura e quer descobrir exatamente como ele funciona.
+
+Por exemplo:
+
+```text
+String()
+Number()
+split()
+reverse()
+join()
+```
 
 ---
 
