@@ -94,6 +94,85 @@ Você precisará lembrar de:
 - como utilizar parâmetros de uma função;
 - como retornar um valor utilizando `return`.
 
+## Onde estudar
+
+### Objetos em JavaScript
+
+Material didático:
+
+- MDN — Trabalhando com objetos:  
+  https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Core/Scripting/Object_basics
+
+Leia principalmente sobre:
+
+- como criar um objeto;
+- propriedades;
+- valores;
+- acesso às propriedades.
+
+Exemplo:
+
+```js
+const pessoa = {
+    nome: "Ana",
+    idade: 18
+}
+```
+
+### Propriedades de objetos
+
+Material:
+
+- MDN — Trabalhando com objetos:  
+  https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Working_with_objects
+
+Observe principalmente como uma propriedade é formada por uma chave e um valor:
+
+```js
+nome: "Ana"
+```
+
+### Funções e parâmetros
+
+Material didático:
+
+- MDN — Funções:  
+  https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Functions
+
+Leia principalmente sobre:
+
+- declaração de função;
+- parâmetros;
+- argumentos;
+- valores recebidos pela função.
+
+Exemplo:
+
+```js
+function mostrarPessoa(nome, idade) {
+
+}
+```
+
+Nesse exemplo, `nome` e `idade` são parâmetros.
+
+### `return`
+
+Material:
+
+- MDN — Funções:  
+  https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Functions
+
+O `return` serve para devolver um valor para quem chamou a função.
+
+Exemplo:
+
+```js
+function exemplo() {
+    return 10
+}
+```
+
 ---
 
 # Questão 2 — Montando uma mensagem
@@ -178,6 +257,127 @@ Você precisará lembrar de:
 - como utilizar `return`.
 
 Você pode utilizar concatenação com `+` ou template string.
+
+## Onde estudar
+
+### Strings
+
+Material didático:
+
+- MDN — Strings:  
+  https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Core/Scripting/Strings
+
+Leia principalmente sobre:
+
+- criação de textos;
+- aspas simples e duplas;
+- concatenação;
+- template strings.
+
+Exemplo:
+
+```js
+const nome = "Carlos"
+```
+
+### Concatenação de textos
+
+Material:
+
+- MDN — Strings:  
+  https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Core/Scripting/Strings
+
+Uma forma de juntar textos é usando `+`.
+
+Exemplo:
+
+```js
+"Olá" + " " + "Carlos"
+```
+
+Resultado:
+
+```js
+"Olá Carlos"
+```
+
+### Template strings
+
+Material:
+
+- MDN — Template literals:  
+  https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Template_literals
+
+Exemplo:
+
+```js
+`${saudacao} ${nome}`
+```
+
+Template strings utilizam crase:
+
+```text
+`
+```
+
+e permitem inserir valores com:
+
+```js
+${valor}
+```
+
+### Estrutura condicional `if`
+
+Material didático:
+
+- MDN — Condicionais:  
+  https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Core/Scripting/Conditionals
+
+Para esta questão, o `if` pode ser utilizado para verificar se algum texto está vazio.
+
+Exemplo:
+
+```js
+if (nome === "") {
+    // alguma ação
+}
+```
+
+### Operadores de comparação
+
+Material:
+
+- MDN — Operadores de comparação:  
+  https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Expressions_and_operators#operadores_de_compara%C3%A7%C3%A3o
+
+Observe principalmente:
+
+```js
+===
+```
+
+### `return`
+
+Material:
+
+- MDN — Funções:  
+  https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Functions
+
+Lembre-se de que:
+
+```js
+console.log(resultado)
+```
+
+apenas mostra o valor.
+
+Já:
+
+```js
+return resultado
+```
+
+devolve o valor da função.
 
 ---
 
@@ -273,6 +473,142 @@ Você precisará lembrar de:
 - como converter um número para texto;
 - como utilizar `return`.
 
+## Onde estudar
+
+### Tipos de dados
+
+Material didático:
+
+- MDN — Tipos e estruturas de dados:  
+  https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Data_structures
+
+Para esta questão, concentre-se principalmente em:
+
+- `number`;
+- `string`.
+
+Compare:
+
+```js
+250
+```
+
+com:
+
+```js
+"250"
+```
+
+Eles parecem semelhantes na tela, mas são tipos de dados diferentes.
+
+### `number`
+
+Material:
+
+- MDN — Number:  
+  https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Number
+
+Exemplos de valores do tipo `number`:
+
+```js
+10
+0
+-5
+42.5
+```
+
+### `string`
+
+Material:
+
+- MDN — Strings:  
+  https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Core/Scripting/Strings
+
+Exemplos de strings:
+
+```js
+"10"
+"Olá"
+"-5"
+"42.5"
+```
+
+### Verificar o tipo com `typeof`
+
+Material:
+
+- MDN — `typeof`:  
+  https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/typeof
+
+Exemplo:
+
+```js
+typeof 250
+```
+
+Resultado:
+
+```js
+"number"
+```
+
+Exemplo:
+
+```js
+typeof "250"
+```
+
+Resultado:
+
+```js
+"string"
+```
+
+### Converter um número para string
+
+Material:
+
+- MDN — `String()`:  
+  https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/String
+
+Exemplo:
+
+```js
+String(250)
+```
+
+Resultado:
+
+```js
+"250"
+```
+
+Observe que o valor continua representando `250`, mas agora é um texto.
+
+### Conversão de tipos
+
+Material complementar:
+
+- MDN — Conversão de tipos:  
+  https://developer.mozilla.org/pt-BR/docs/Glossary/Type_Conversion
+
+A conversão de tipos acontece quando um valor passa de um tipo para outro.
+
+Exemplo:
+
+```text
+number → string
+```
+
+### `return`
+
+Material:
+
+- MDN — Funções:  
+  https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Functions
+
+Depois de converter o valor, a função deve devolvê-lo com `return`.
+
 ---
 
 # Conteúdos trabalhados
@@ -290,7 +626,48 @@ Os exercícios trabalham principalmente os seguintes conteúdos:
 - concatenação de textos;
 - template strings;
 - conversão de tipos;
-- estrutura condicional `if`.
+- estrutura condicional `if`;
+- operador de comparação `===`;
+- operador `typeof`.
+
+---
+
+# Documentação geral recomendada
+
+## MDN — JavaScript para iniciantes
+
+https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Core/Scripting
+
+Essa é uma das partes mais indicadas da MDN para quem ainda está começando com JavaScript.
+
+Os conteúdos possuem explicações, exemplos e exercícios.
+
+## Guia de JavaScript da MDN
+
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide
+
+Use para revisar assuntos como:
+
+- funções;
+- objetos;
+- tipos;
+- operadores;
+- estruturas condicionais.
+
+## Referência JavaScript da MDN
+
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference
+
+Use quando quiser consultar um recurso específico da linguagem.
+
+Exemplos:
+
+```text
+String()
+Number()
+typeof
+return
+```
 
 ---
 
